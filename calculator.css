@@ -1,0 +1,119 @@
+        
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Micro+5&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@1,900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .whole{
+            height: 97vh;
+            width: 97vw;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVza1A-cZuo6de9x_HwPFX01VvbtogZHJHHTuH-IEMQg&s);
+
+        }
+
+        h1{
+            background: linear-gradient(90deg, #6f0b1f, #ff00c3);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+        
+        }
+        .Tag
+        {
+            position: absolute;
+            top: 10px;
+            font-family: "Roboto","montserrat";
+            color:#7e1b5b;
+            font-size: 20px;
+        }
+        .box
+        {
+            height: 400px;
+            width: 500px;
+            border: 2px solid rgb(107, 107, 201);
+            /* z-index: 1; */
+            background-color: rgba(0, 0, 0, 0.789);
+        }
+        .but
+        {
+            width: 35px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: orange;
+
+        }
+        .display
+        {
+            /* z-index: 10; */
+            font-weight: bold;
+            font-family: e34xc;
+            width: 100;
+            height: 80px;
+            border: 2px solid green;
+            animation: borderr 2s ease-in-out 0.2s infinite alternate-reverse ;
+            background-color: black;
+            color: white;
+            font-size: 55px;
+            position: relative;
+            right: 0px;
+            overflow: hidden;
+
+        }
+        .display:hover
+        {
+            border-color: yellow;
+        }
+        .buttons {
+            margin-top:13px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 60px 60px 62px;
+        }
+        .but{
+            width: 100px;
+            height: 40px;
+            gap: 10px;
+            cursor: pointer;
+            background-color: rgb(238, 174, 91);
+            color: blue;
+        }
+        .but:hover
+        {
+           animation: borderr 2s ease-in-out 0.0001s infinite;
+           background-color: #f5c2a7;
+        }
+        @keyframes borderr {
+            from {
+                border-color: yellow green blue white;
+                
+            }
+            to {
+                border-color: red pink olivedrab skyblue;
+                color:skyblue
+            }
+        }
+        @keyframes typing 
+        {
+            from{
+                width: 0;
+            }
+            to{
+                width: 80vw;
+            }
+        }
+
+        
+        @media screen and (max-width: 480px) {
+            .box{
+                width: 78vw;
+            }
+            .buttons {
+                   
+                   grid-template-columns: 80px 80px 80px 72px;
+            }
+            .but{
+                width: 50%;
+                gap: 0px;
+            }
+        }
